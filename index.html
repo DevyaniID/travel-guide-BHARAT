@@ -5,22 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Guide Bharat</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Travel Guide Bharat</h1>
+    <header class="navbar">
+        <div class="logo">
+            <img src="assets/logo.png" alt="Travel Guide Bharat Logo">
+        </div>
         <nav>
-            <a href="#">Home</a>
-            <a href="#">Destinations</a>
-            <a href="#">Contact</a>
+            <ul>
+                <li><a href="inspiration.html">Be Inspired</a></li>
+                <li><a href="places.html">Places to Go</a></li>
+                <li><a href="things.html">Things to Do</a></li>
+                <li><a href="plan.html">Plan Your Trip</a></li>
+            </ul>
+
         </nav>
+        <div class="icons">
+            <a href="#"><img src="assets/icons/heart.png" alt="Favorites"></a>
+            <a href="#"><img src="assets/icons/map.png" alt="Map"></a>
+        </div>
     </header>
-    <main>
-        <section>
-            <h2>Top Destinations</h2>
-            <p>Explore places like Kerala, Goa, Ladakh, and more!</p>
-        </section>
-    </main>
+
+    <section class="hero">
+        <div class="overlay"></div>
+       <img src="assets/images/hero.jpg" alt="Travel Bharat" class="hero-bg">
+        <div class="hero-content">
+            <h1>COME AND SAY <span>Namaste</span></h1>
+            <button class="cta" onclick="window.location.href='places.html'">
+                Explore the Best of Bharat
+            </button>
+
+        </div>
+    </section>
+
     <footer>
         <p>&copy; 2025 Travel Guide Bharat</p>
     </footer>

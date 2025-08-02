@@ -162,3 +162,45 @@ footer {
     transform: translateY(-8px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
+
+
+
+/* Card Grid and Cards (Same Style as Destination Cards) */
+.card-grid {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+.card img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px; /* optional for rounded corners */
+    object-fit: cover;   /* optional if you want uniform aspect ratio */
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card p {
+    margin: 15px 0;
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 600;
+}

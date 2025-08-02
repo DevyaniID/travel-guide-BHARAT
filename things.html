@@ -1,48 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Things to Do - Travel Guide Bharat</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Be Inspired - Travel Guide Bharat</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('assets/backgrounds/place3.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+    }
+
+    .navbar {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 10px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar .logo img {
+      height: 40px;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: #003B5C;
+      font-weight: 600;
+    }
+
+    .icons img {
+      height: 20px;
+      margin-left: 15px;
+    }
+
+    main {
+      padding: 40px;
+    }
+
+    .section {
+      margin-bottom: 60px;
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .section h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .card-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      width: calc(25% - 20px);
+      background-color: #fff;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-title {
+      padding: 15px;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      color: #003B5C;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.85);
+      font-size: 14px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .card {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <!-- Navbar -->
-    <header class="navbar">
-        <div class="logo">
-            <a href="index.html"><img src="images/logo.png" alt="Travel Guide Bharat Logo"></a>
-        </div>
-        <ul>
-            <li><a href="inspiration.html">Be Inspired</a></li>
-            <li><a href="places.html">Places to Go</a></li>
-            <li><a href="things.html">Things to Do</a></li>
-            <li><a href="plan.html">Plan Your Trip</a></li>
-        </ul>
-        <div class="icons">
-            <img src="images/heart-icon.png" alt="Favorite">
-            <img src="images/map-icon.png" alt="Map">
-        </div>
-    </header>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <a href="index.html"><img src="assets/logo.png" alt="Travel Guide Bharat Logo"></a>
+    </div>
+    <ul>
+      <li><a href="inspiration.html">Be Inspired</a></li>
+      <li><a href="places.html">Places to Go</a></li>
+      <li><a href="things.html">Things to Do</a></li>
+      <li><a href="plan.html">Plan Your Trip</a></li>
+    </ul>
+    <div class="icons">
+      <img src="assets/icons/heart.png" alt="Favorite">
+      <img src="assets/icons/map.png" alt="Map">
+    </div>
+  </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <img src="images/things-hero.jpg" alt="Things to Do" class="hero-bg">
-        <div class="overlay"></div>
-        <div class="hero-content">
-            <h1>Things to Do</h1>
-            <button class="cta" onclick="window.location.href='index.html'">Back to Home</button>
-        </div>
-    </section>
+  <!-- Main Sections -->
+  <main>
+    <div class="section">
+      <h2>Discover Food</h2>
+      <div class="card-container">
+        <div class="card"><img src="assets/cards/food1.jpg"><div class="card-title">Street Foods</div></div>
+        <div class="card"><img src="assets/cards/food2.jpg"><div class="card-title">Local Thalis</div></div>
+        <div class="card"><img src="assets/cards/food3.jpg"><div class="card-title">Cafés & Coffee</div></div>
+        <div class="card"><img src="assets/cards/food4.jpg"><div class="card-title">Sweet Treats</div></div>
+      </div>
+    </div>
 
-    <main>
-        <section style="padding: 50px;">
-            <h2>Enjoy Unique Experiences</h2>
-            <p>From cultural festivals to adventure sports, explore exciting things to do in Bharat.</p>
-        </section>
-    </main>
+    <div class="section">
+      <h2>Wildlife</h2>
+      <div class="card-container">
+        <div class="card"><img src="assets/cards/wild1.jpg"><div class="card-title">National Parks</div></div>
+        <div class="card"><img src="assets/cards/wild2.jpg"><div class="card-title">Safari Tours</div></div>
+        <div class="card"><img src="assets/cards/wild3.jpg"><div class="card-title">Bird Watching</div></div>
+        <div class="card"><img src="assets/cards/wild4.jpg"><div class="card-title">Tiger Reserves</div></div>
+      </div>
+    </div>
 
-    <footer>
-        <p>© 2025 Travel Guide Bharat. All rights reserved.</p>
-    </footer>
+    <div class="section">
+      <h2>India Recommends 2025</h2>
+      <div class="card-container">
+        <div class="card"><img src="assets/cards/rec1.jpg"><div class="card-title">Top Destinations</div></div>
+        <div class="card"><img src="assets/cards/rec2.jpg"><div class="card-title">Cultural Routes</div></div>
+        <div class="card"><img src="assets/cards/rec3.jpg"><div class="card-title">Wellness Trips</div></div>
+        <div class="card"><img src="assets/cards/rec4.jpg"><div class="card-title">Festive India</div></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Beaches in India</h2>
+      <div class="card-container">
+        <div class="card"><img src="assets/cards/beach1.jpg"><div class="card-title">Goa Vibes</div></div>
+        <div class="card"><img src="assets/cards/beach2.jpg"><div class="card-title">Andaman Beauty</div></div>
+        <div class="card"><img src="assets/cards/beach3.jpg"><div class="card-title">Kerala Coasts</div></div>
+        <div class="card"><img src="assets/cards/beach4.jpg"><div class="card-title">Gujarat Shores</div></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Mountains</h2>
+      <div class="card-container">
+        <div class="card"><img src="assets/cards/mountain1.jpg"><div class="card-title">Himalayan Treks</div></div>
+        <div class="card"><img src="assets/cards/mountain2.jpg"><div class="card-title">Leh-Ladakh</div></div>
+        <div class="card"><img src="assets/cards/mountain3.jpg"><div class="card-title">Spiti Adventure</div></div>
+        <div class="card"><img src="assets/cards/mountain4.jpg"><div class="card-title">Tea Estates</div></div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Travel Guide Bharat. All rights reserved.</p>
+  </footer>
 </body>
 </html>
